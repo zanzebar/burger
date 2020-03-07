@@ -1,0 +1,29 @@
+.hero {
+  background: url(../../img/background.png) center center / cover no-repeat;
+  color: white;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.hero__content{
+  display: flex;
+  align-items: center;
+  flex: .8;
+}
+
+.hero__desc{
+  font-size: 65px;
+  font-family: 'Lifehack-Medium';
+  line-height: 1.1;
+}
+
+.hero__text{
+  width: 50%;
+  padding-top: 120px;
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

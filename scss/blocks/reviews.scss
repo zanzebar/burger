@@ -1,0 +1,15 @@
+.reviews__list{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.reviews__item{
+  width: 25%;
+  height: 50%;
+}
+
+.reviews{
+  height: 100vh;
+  min-height: 650px;
+}

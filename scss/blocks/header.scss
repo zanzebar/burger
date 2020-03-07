@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header__btns{
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 13px;
+}

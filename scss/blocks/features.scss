@@ -1,0 +1,13 @@
+.features{
+  background: url(../../img/bg.png) center center / cover no-repeat;
+}
+
+
+.features__list{
+  display: flex;
+}
+
+.features__item{
+  justify-content: space-between;
+  width: calc(100% / 3 - 26px);
+}

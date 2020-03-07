@@ -1,0 +1,35 @@
+$itemsMargin:15px;
+
+
+
+
+.menu__list{
+  display: flex;
+  align-items: center;
+}
+
+.menu__item{
+  display: flex;
+  align-items: center;
+&:before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  margin-left: $itemsMargin;
+}
+&:first-child {
+  &::before{
+    display: none;
+  }
+}
+}
+
+.menu__link{
+  margin-left: $itemsMargin;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
