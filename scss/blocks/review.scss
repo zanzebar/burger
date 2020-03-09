@@ -1,7 +1,7 @@
 .review{
   position: relative;
   color: white;
-  filter: grayscale(100%);
+  
   &:hover{
     .review__hover{
       opacity: 1;
@@ -19,7 +19,9 @@
   opacity: 0;
   transition: .3s;
   transform: scale(.8);
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .review__pic{
@@ -45,3 +47,14 @@
 .review__item{
   text-align: left;
 }
+
+
+.review__img-wrapper{
+  height: 100%;
+}
+
+.review__hover-content{
+  padding: 20px;
+  max-width: 290px;
+}
+

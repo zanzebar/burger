@@ -464,7 +464,7 @@ template {
 }
 
 .hero {
-  background: url(../../img/background.png) center center/cover no-repeat;
+  background: url(../img/background.png) center center/cover no-repeat;
   color: white;
   justify-content: flex-start;
   position: relative;
@@ -497,6 +497,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 15px;
 }
 
 .header__btns {
@@ -536,6 +537,7 @@ template {
 }
 
 .btn {
+  display: inline-flex;
   background-color: #e45028;
   text-decoration: none;
   text-transform: uppercase;
@@ -544,16 +546,32 @@ template {
   border-radius: 5px;
   margin-left: 15px;
 }
+.btn:hover {
+  background-color: #c1401e;
+}
+
+.btn__hover {
+  background-color: #2f3234;
+  margin-left: 0;
+}
+.btn__hover:hover {
+  background-color: #1f2122;
+}
 
 .scroll-down {
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translatex(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
 }
 
 .features {
-  background: url(../../img/bg.png) center center/cover no-repeat;
+  background: url(../img/bg.png) center center/cover no-repeat;
 }
 
 .features__list {
@@ -576,6 +594,17 @@ template {
   margin-bottom: 35px;
 }
 
+.feature__title {
+  font-size: 24px;
+  font-family: "Lifehack-Medium";
+}
+
+.feature__text {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
@@ -595,7 +624,6 @@ template {
 .review {
   position: relative;
   color: white;
-  filter: grayscale(100%);
 }
 .review:hover .review__hover {
   opacity: 1;
@@ -611,6 +639,9 @@ template {
   opacity: 0;
   transition: 0.3s;
   transform: scale(0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .review__pic {
@@ -635,6 +666,15 @@ template {
 
 .review__item {
   text-align: left;
+}
+
+.review__img-wrapper {
+  height: 100%;
+}
+
+.review__hover-content {
+  padding: 20px;
+  max-width: 290px;
 }
 
 /*# sourceMappingURL=main.css.map */
