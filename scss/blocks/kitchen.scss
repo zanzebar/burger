@@ -1,0 +1,73 @@
+.kitchen{
+  background: url(../img/kitchen-bg.png) center center / cover no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.section__title--top{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+.section__title--white{
+  color: white;
+  display: flex;
+  
+   
+}
+
+
+.kitchen__title{
+  font-family: "gagalin", Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 15px;
+    
+}
+
+.kitchen__link{
+  display: flex;
+  writing-mode: vertical-rl;
+  align-items: center;
+transform: rotate(180deg);
+height: 100vh;
+max-width: 9%;
+align-items: center;
+
+}
+
+.kitchen__item{
+  display: flex;
+  
+}
+
+.kitchen__info{
+  background: rgba(47, 50, 52, 0.5);
+  
+  width: 0;
+}
+
+.kitchen__text{
+  font-family: 'Ubuntu';	
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  min-width: 40%;
+  padding: 14% 4%;
+}
+
+
+.kitchen__list{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kitchen__item--active{
+  .kitchen__info{
+    width: 40%;
+  }
+}

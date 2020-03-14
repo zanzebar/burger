@@ -1,0 +1,22 @@
+.team{
+  background: url(../img/team_bg.png) center center / cover no-repeat;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.team__content{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  
+  
+  background-color: rgba(47, 50, 52, 0.9);
+  width: 50%;
+  height: 100%;
+  padding-left: 13%;
+  padding-top: 8%;
+}
