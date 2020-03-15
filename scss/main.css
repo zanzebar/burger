@@ -899,6 +899,7 @@ template {
 }
 
 .tell {
+  display: flex;
   color: #e45028;
 }
 .tell ::before {
