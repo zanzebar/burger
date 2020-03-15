@@ -847,4 +847,66 @@ template {
   background: url(../img/map.png) center center/cover no-repeat;
 }
 
+.footer__container {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  background: url(../../img/footer-bg.png) center center/cover no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  height: 60px;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.footer__right {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 25px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: flex;
+}
+.socials__link :hover {
+  opacity: 0.5;
+}
+
+.tell {
+  color: #e45028;
+}
+.tell ::before {
+  content: "";
+  background: url(../img/phone.png);
+}
+.tell :hover {
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */
