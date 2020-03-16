@@ -1,0 +1,139 @@
+.order-section{
+  background: url(../img/order-bg.png) center center / cover no-repeat;
+}
+
+.order{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+
+.order__col{
+  width: calc(50% - 10px);
+}
+
+.order__col--right{
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.order__row{
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.order__block{
+  flex: 1;
+  margin-right: 2rem;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+
+.order__radio{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: rem(20px);
+  margin-bottom: rem(15px);
+  .order__title{
+    margin-bottom: 0;
+  }
+}
+
+
+.order__title{
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: 'Ubuntu';
+font-size: rem(14px);
+	font-weight: 300;
+}
+
+.order__input{
+  width: 100%;
+  padding: .8rem 2rem;
+  border: none;
+  border-radius: .4rem;
+  
+}
+
+
+.order__input-radio:checked + .order__input-style{
+  transition: .3s;
+  border-color: #f9b43b;
+  &::before{
+    height: rem(8px);
+    width: rem(8px);
+  }
+}
+
+
+.order__input-radio{
+  position: absolute;
+  top: 0;
+  left: rem(-9999px);
+}
+
+
+.order__input-style{
+  display: flex;
+  margin-right: rem(10px);
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border: rem(1px) solid gray;
+  justify-content: center;
+  align-items: center;
+  &::before{
+    content: '';
+    display: flex;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #f9b43b;
+  }
+}
+
+.order__checkbox-style{
+  display: flex;
+  margin-right: rem(10px);
+  width: rem(16px);
+  height: rem(16px);
+  border: rem(1px) solid gray;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  
+    
+}
+
+
+.order__buttons{
+  display: flex;
+  
+}
+
+.btn--order{
+  margin-left: 0;
+  margin-right: 1rem;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.btn_cancel{
+  background-color: transparent;
+}
+
+
+
+
+.order__textarea{
+  overflow: auto;
+  width: 100%;
+}

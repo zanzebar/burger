@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
+  padding-top: rem(15px);
 }
 
 
@@ -11,5 +11,5 @@
   align-items: center;
   font-family: 'Ubuntu';
   font-weight: 500;
-  font-size: 13px;
+  font-size: rem(13px);
 }

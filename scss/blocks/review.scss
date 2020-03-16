@@ -32,16 +32,16 @@
 }
 
 .review__username{
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: 'Gagalin-Regular';
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .review__content{
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: 'Ubuntu';
   font-weight: 300;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .review__item{
@@ -54,7 +54,7 @@
 }
 
 .review__hover-content{
-  padding: 20px;
-  max-width: 290px;
+  padding: rem(20px);
+  max-width: rem(290px);
 }
 

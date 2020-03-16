@@ -16,7 +16,7 @@
   <section class="section hero">
     <div class="container hero__container">
       <header class="header">
-        <img class="logo" src="./img/logo.png" alt="mr burger logo">
+        <img  class="logo" src="./img/logo.png" alt="">
         <div class="header__btns">
           <nav class="menu">
             <ul class="menu__list">
@@ -55,7 +55,7 @@
       <ul class="features__list">
         <li class="features__item feature">
           <div class="feature__img">
-            <img class="feature__img-elem" src="./img/meat.png" alt="fried chicken">
+            <img class="feature__img-elem" src="./img/icons/meat.svg" alt="fried chicken">
           </div>
             <div class="feature__content">
               <h3 class="feature__title">100% Свежее мясо</h3>
@@ -68,7 +68,7 @@
         </li>
         <li class="features__item feature">
           <div class="feature__img">
-            <img class="feature__img-elem" src="./img/hand.png" alt="fried chicken">
+            <img class="feature__img-elem" src="./img/icons/hand.svg" alt="fried chicken">
           </div>
             <div class="feature__content">
               <h3 class="feature__title">Ручная  сборка</h3>
@@ -81,7 +81,7 @@
         </li>
         <li class="features__item feature">
           <div class="feature__img">
-            <img class="feature__img-elem" src="./img/natural.png" alt="fried chicken">
+            <img class="feature__img-elem" src="./img/icons/natural.svg" alt="fried chicken">
           </div>
             <div class="feature__content">
               <h3 class="feature__title">Натуральные
@@ -163,9 +163,7 @@
     
   </section>
 
-  <section class="kitchen section">
-    <div class="container kitchen__container">
-      <div class="kitchen__content">
+  <section class="kitchen section">    
         <h1 class="section__title section__title--white section__title--top">Меню</h1>
         <ul class="kitchen__list accordeon">
           <li class="kitchen__item kitchen__item--active">
@@ -194,8 +192,8 @@
           </li>
 
         </ul>
-      </div>
-    </div>
+      
+    
   </section>
 
 
@@ -346,40 +344,78 @@
     <div class="container">
       <h2 class="section__title section__title--centered">Закажите доставку</h2>
       <form class="order">
-        <div class="order__row">
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
+        <div class="order__col order__col--left">
+          <div class="order__row">
+            <label class="order__block">
+              <div class="order__title">Имя</div>
+              <input type="text" class="order__input">
+            </label>
+            <label class="order__block">
+              <div class="order__title">Телефон</div>
+              <input type="text" class="order__input">
+            </label>
+          </div>
+          <div class="order__row">
+            <label class="order__block">
+              <div class="order__title">Улица</div>
+              <input type="text" class="order__input">
+            </label>
+          </div>
+          <div class="order__row">
+            <label class="order__block">
+              <div class="order__title">Дом</div>
+              <input type="text" class="order__input">
+            </label>
+            <label class="order__block">
+              <div class="order__title">Корпус</div>
+              <input type="text" class="order__input">
+            </label>
+            <label class="order__block">
+              <div class="order__title">Квартира</div>
+              <input type="text" class="order__input">
+            </label>
+            <label class="order__block">
+              <div class="order__title">Этаж</div>
+              <input type="text" class="order__input">
+            </label>
+          </div>
         </div>
-        <div class="order__row">
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
+        <div class="order__col order__col--right">
+          <div class="order__row">
+            <label class="order__label">
+               <div class="order__title">Комментарий</div>
+               <textarea name="" class="order__input order__textarea"></textarea>
+            </label class="order__label">
+          </div>
+            <div class="order__row">
+              <label class="order__radio">
+                 <input type="radio" class="order__input-radio" name="radio">
+                 <span class="order__input-style"></span>
+                 <div class="order__title">Потребуется сдача</div>
+              </label>
+              <label class="order__radio">
+                 <input type="radio" class="order__input-radio" name="radio" checked>
+                 <span class="order__input-style"></span>
+                 <div class="order__title">Оплата по карте</div>
+              </label>
+           </div>
+           <div class="order__row">
+              <label class="order__radio">
+                 <input type="checkbox" class="order__input-radio" name="checkbox">
+                 <span class="order__checkbox-style"></span>
+                 <div class="order__title">Не перезванивать</div>
+              </label>
+           </div>
+           <div class="order__buttons">
+            <a href="#" class="btn btn--order">Заказать</a>
+            <a href="#" class="btn btn--order btn_cancel">Очистить</a>
+
+
+           </div>
+           
         </div>
-        <div class="order__row">
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
-          <label class="order__block">
-            <div class="order__title">Имя</div>
-            <input type="text" class="order__input">
-          </label>
-        </div>
+        
+        
       </form>
     </div>
   </section>
@@ -398,6 +434,7 @@
       <div class="footer__left">
         <div class="adress">
           <span class="street">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
+
           <a href="#" class="tell">+7 (812) 377-13-77</a>
         </div>
       </div>
@@ -406,22 +443,30 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a href="" class="socials__link">
-                <img src="./img/vk-hover.png" alt="">
+               <svg class="socilas__svg">
+                 <use xlink:href="./img/icons/sprite.svg#vk"></use>
+               </svg>
               </a>
             </li>
             <li class="socials__item">
               <a href="" class="socials__link">
-                <img src="./img/fb-hover.png" alt="">
+                <svg class="socilas__svg">
+                  <use xlink:href="./img/icons/sprite.svg#faceb"></use>
+                </svg>
               </a>
             </li>
             <li class="socials__item">
               <a href="" class="socials__link">
-                <img src="./img/inst-hover.png" alt="">
+                <svg class="socilas__svg">
+                  <use xlink:href="./img/icons/sprite.svg#insta"></use>
+                </svg>
               </a>
             </li>
             <li class="socials__item">
               <a href="" class="socials__link">
-                <img src="./img/twitter-hover.png" alt="">
+                <svg class="socilas__svg">
+                  <use xlink:href="./img/icons/sprite.svg#twitter"></use>
+                </svg>
               </a>
             </li>
           </ul>

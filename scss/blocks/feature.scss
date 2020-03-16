@@ -6,16 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: rem(35px);
 }
 
 .feature__title{
-  font-size: 24px;
+  font-size: rem(24px);
   font-family: 'Lifehack-Medium';
 }
 
 .feature__text {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: 'Ubuntu';
 	font-weight: 500;
 }

@@ -1,4 +1,4 @@
-$itemsMargin:15px;
+$itemsMargin:rem(15px);
 
 
 
@@ -14,8 +14,8 @@ $itemsMargin:15px;
 &:before{
   content: "";
   display: block;
-  width: 4px;
-  height: 4px;
+  width: rem(4px);
+  height: rem(4px);
   border-radius: 50%;
   background: white;
   margin-left: $itemsMargin;

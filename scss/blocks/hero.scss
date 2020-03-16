@@ -12,14 +12,14 @@
 }
 
 .hero__desc{
-  font-size: 65px;
+  font-size: rem(65px);
   font-family: 'Lifehack-Medium';
   line-height: 1.1;
 }
 
 .hero__text{
   width: 50%;
-  padding-top: 120px;
+  padding-top: rem(120px);
 }
 
 .hero__container{

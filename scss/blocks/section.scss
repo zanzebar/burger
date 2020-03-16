@@ -3,14 +3,14 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 
 .section__title{
-  font-size: 72px;
+  font-size: rem(72px);
   color: #f9b43b;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   line-height: 1;
   &--centered{

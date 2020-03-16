@@ -13,7 +13,7 @@
   bottom: 0;
   left: 0;
   align-items: center;
-  height: 60px;
+  height: rem(60px);
 }
 
 
@@ -43,28 +43,35 @@
 }
 
 .socials__item{
-  margin-right: 25px;
+  margin-right: rem(25px);
   &:last-child{
     margin-right: 0;
   }
 }
 
+
 .socials__link{
   display: flex;
-  
-  :hover{
-   opacity: .5;
+}
+.tell{
+  display: flex;
+  align-items: center;
+  color: #e45028;
+  &::before{
+    content: "";
+    width: rem(15px);
+    height: rem(15px);
+    background: url(../../img/icons/phone.svg) center center / cover no-repeat;
+    margin-right: rem(10px);
   }
 }
 
-.tell{
-  display: flex;
-  color: #e45028;
-  ::before{
-    content: "";
-    background: url(../img/phone.png);
-  }
-  :hover{
-    color: white;
+.socilas__svg{
+  width: rem(20px);
+  height: rem(20px);
+  fill: gray;
+  &:hover{
+    fill: white;
+    transition: .3s;
   }
 }

@@ -34,7 +34,7 @@ body {
 }
 
 body {
-  font-size: 16px;
+  font-size: rem(16px);
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,13 +46,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  max-width: rem(940px);
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -447,13 +447,13 @@ template {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .section__title {
-  font-size: 72px;
+  font-size: rem(72px);
   color: #f9b43b;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   line-height: 1;
 }
@@ -478,14 +478,14 @@ template {
 }
 
 .hero__desc {
-  font-size: 65px;
+  font-size: rem(65px);
   font-family: "Lifehack-Medium";
   line-height: 1.1;
 }
 
 .hero__text {
   width: 50%;
-  padding-top: 120px;
+  padding-top: rem(120px);
 }
 
 .hero__container {
@@ -498,7 +498,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
+  padding-top: rem(15px);
 }
 
 .header__btns {
@@ -506,7 +506,7 @@ template {
   align-items: center;
   font-family: "Ubuntu";
   font-weight: 500;
-  font-size: 13px;
+  font-size: rem(13px);
 }
 
 .menu__list {
@@ -521,18 +521,18 @@ template {
 .menu__item:before {
   content: "";
   display: block;
-  width: 4px;
-  height: 4px;
+  width: rem(4px);
+  height: rem(4px);
   border-radius: 50%;
   background: white;
-  margin-left: 15px;
+  margin-left: rem(15px);
 }
 .menu__item:first-child::before {
   display: none;
 }
 
 .menu__link {
-  margin-left: 15px;
+  margin-left: rem(15px);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -543,9 +543,9 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin-left: 15px;
+  padding: rem(10px) rem(15px);
+  border-radius: rem(5px);
+  margin-left: rem(15px);
 }
 .btn:hover {
   background-color: #c1401e;
@@ -561,11 +561,11 @@ template {
 
 .scroll-down {
   position: absolute;
-  bottom: 40px;
+  bottom: rem(40px);
   left: 50%;
   transform: translatex(-50%);
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
   background-color: transparent;
   border: transparent;
   cursor: pointer;
@@ -592,16 +592,16 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: rem(35px);
 }
 
 .feature__title {
-  font-size: 24px;
+  font-size: rem(24px);
   font-family: "Lifehack-Medium";
 }
 
 .feature__text {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "Ubuntu";
   font-weight: 500;
 }
@@ -619,7 +619,7 @@ template {
 
 .reviews {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .review {
@@ -653,16 +653,16 @@ template {
 }
 
 .review__username {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "Gagalin-Regular";
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .review__content {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "Ubuntu";
   font-weight: 300;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .review__item {
@@ -674,8 +674,8 @@ template {
 }
 
 .review__hover-content {
-  padding: 20px;
-  max-width: 290px;
+  padding: rem(20px);
+  max-width: rem(290px);
 }
 
 .team {
@@ -700,23 +700,23 @@ template {
 
 .team__member {
   font-family: "Gagalin-Regular";
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 .team__member::before {
   content: "";
   display: inline-block;
-  border: 7px solid transparent;
-  border-left-width: 5px;
-  border-right-width: 5px;
+  border: rem(7px) solid transparent;
+  border-left-width: rem(5px);
+  border-right-width: rem(5px);
   border-top-color: #f9b43b;
   border-bottom: none;
-  margin-right: 10px;
+  margin-right: rem(10px);
 }
 
 .team__item {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   display: flex;
   flex-direction: column;
 }
@@ -730,9 +730,9 @@ template {
 .member__picture {
   border-radius: 50%;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: rem(100px);
+  height: rem(100px);
+  margin-right: rem(20px);
 }
 
 .member__img {
@@ -743,16 +743,16 @@ template {
 .member__position {
   font-family: "Ubuntu";
   font-weight: bold;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
 }
 
 .member__text {
   font-family: "Ubuntu";
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
-  margin-top: 20px;
+  margin-top: rem(20px);
 }
 
 .member__info {
@@ -765,12 +765,12 @@ template {
 .team__item_active .team__member::before {
   content: "";
   display: inline-block;
-  border: 7px solid transparent;
-  border-left-width: 5px;
-  border-right-width: 5px;
+  border: rem(7px) solid transparent;
+  border-left-width: rem(5px);
+  border-right-width: rem(5px);
   border-bottom-color: #f9b43b;
   border-top: none;
-  margin-right: 10px;
+  margin-right: rem(10px);
 }
 .team__item_active .member__content {
   overflow: visible;
@@ -787,7 +787,7 @@ template {
   display: flex;
   position: absolute;
   top: 0;
-  left: 60px;
+  left: rem(60px);
 }
 
 .section__title--white {
@@ -796,10 +796,10 @@ template {
 }
 
 .kitchen__title {
-  font-family: "gagalin", Arial, sans-serif;
-  font-size: 40px;
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
+  font-size: rem(40px);
   color: white;
-  padding-top: 15px;
+  padding-top: rem(15px);
 }
 
 .kitchen__link {
@@ -808,7 +808,7 @@ template {
   align-items: center;
   transform: rotate(180deg);
   height: 100vh;
-  max-width: 9%;
+  width: rem(60px);
   align-items: center;
 }
 
@@ -818,13 +818,14 @@ template {
 
 .kitchen__info {
   background: rgba(47, 50, 52, 0.5);
+  overflow: hidden;
   width: 0;
 }
 
 .kitchen__text {
   font-family: "Ubuntu";
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
   min-width: 40%;
   padding: 14% 4%;
@@ -838,7 +839,11 @@ template {
 }
 
 .kitchen__item--active .kitchen__info {
-  width: 40%;
+  max-width: rem(540px);
+  width: 100%;
+}
+.kitchen__item--active .kitchen__title {
+  color: #f9b43b;
 }
 
 .map {
@@ -858,7 +863,7 @@ template {
   bottom: 0;
   left: 0;
   align-items: center;
-  height: 60px;
+  height: rem(60px);
 }
 
 .footer__left {
@@ -885,7 +890,7 @@ template {
 }
 
 .socials__item {
-  margin-right: 25px;
+  margin-right: rem(25px);
 }
 .socials__item:last-child {
   margin-right: 0;
@@ -894,20 +899,154 @@ template {
 .socials__link {
   display: flex;
 }
-.socials__link :hover {
-  opacity: 0.5;
-}
 
 .tell {
   display: flex;
+  align-items: center;
   color: #e45028;
 }
-.tell ::before {
+.tell::before {
   content: "";
-  background: url(../img/phone.png);
+  width: rem(15px);
+  height: rem(15px);
+  background: url(../../img/icons/phone.svg) center center/cover no-repeat;
+  margin-right: rem(10px);
 }
-.tell :hover {
+
+.socilas__svg {
+  width: rem(20px);
+  height: rem(20px);
+  fill: gray;
+}
+.socilas__svg:hover {
+  fill: white;
+  transition: 0.3s;
+}
+
+.order-section {
+  background: url(../img/order-bg.png) center center/cover no-repeat;
+}
+
+.order {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.order__col {
+  width: calc(50% - 10px);
+}
+
+.order__col--right {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__row {
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.order__block {
+  flex: 1;
+  margin-right: 2rem;
+}
+.order__block:last-child {
+  margin-right: 0;
+}
+
+.order__radio {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: rem(20px);
+  margin-bottom: rem(15px);
+}
+.order__radio .order__title {
+  margin-bottom: 0;
+}
+
+.order__title {
+  margin-bottom: 0.5rem;
   color: white;
+  font-family: "Ubuntu";
+  font-size: rem(14px);
+  font-weight: 300;
+}
+
+.order__input {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.order__input-radio:checked + .order__input-style {
+  transition: 0.3s;
+  border-color: #f9b43b;
+}
+.order__input-radio:checked + .order__input-style::before {
+  height: rem(8px);
+  width: rem(8px);
+}
+
+.order__input-radio {
+  position: absolute;
+  top: 0;
+  left: rem(-9999px);
+}
+
+.order__input-style {
+  display: flex;
+  margin-right: rem(10px);
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border: rem(1px) solid gray;
+  justify-content: center;
+  align-items: center;
+}
+.order__input-style::before {
+  content: "";
+  display: flex;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #f9b43b;
+}
+
+.order__checkbox-style {
+  display: flex;
+  margin-right: rem(10px);
+  width: rem(16px);
+  height: rem(16px);
+  border: rem(1px) solid gray;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.order__buttons {
+  display: flex;
+}
+
+.btn--order {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+.btn--order:last-child {
+  margin-right: 0;
+}
+
+.btn_cancel {
+  background-color: transparent;
+}
+
+.order__textarea {
+  overflow: auto;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

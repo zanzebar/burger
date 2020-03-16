@@ -1,23 +1,23 @@
 .team__member{
   font-family: 'Gagalin-Regular';
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   &::before{
     content: "";
     display: inline-block;
-    border: 7px solid transparent;
-    border-left-width: 5px;
-    border-right-width: 5px;
+    border: rem(7px) solid transparent;
+    border-left-width: rem(5px);
+    border-right-width: rem(5px);
     border-top-color: #f9b43b;
     border-bottom: none;
-    margin-right: 10px;
+    margin-right: rem(10px);
   }
 }
 
 
 .team__item{
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   display: flex;
   flex-direction: column;
 }
@@ -31,9 +31,9 @@
 .member__picture{
   border-radius: 50%;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: rem(100px);
+  height: rem(100px);
+  margin-right: rem(20px);
 }
 .member__img{
   object-fit: cover;
@@ -43,7 +43,7 @@
 .member__position{
   font-family: 'Ubuntu';
   font-weight: bold;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
   
 }
@@ -51,9 +51,9 @@
 .member__text{
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
-  margin-top: 20px;
+  margin-top: rem(20px);
 }
 
 .member__info{
@@ -67,12 +67,12 @@
     &::before{
       content: "";
     display: inline-block;
-    border: 7px solid transparent;
-    border-left-width: 5px;
-    border-right-width: 5px;
+    border: rem(7px) solid transparent;
+    border-left-width: rem(5px);
+    border-right-width: rem(5px);
     border-bottom-color: #f9b43b;
     border-top: none;
-    margin-right: 10px;
+    margin-right: rem(10px);
     }
   }
 

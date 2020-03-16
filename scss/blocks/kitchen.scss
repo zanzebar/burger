@@ -8,7 +8,7 @@
   display: flex;
   position: absolute;
   top: 0;
-  left: 60px;
+  left: rem(60px);
 }
 
 .section__title--white{
@@ -20,10 +20,10 @@
 
 
 .kitchen__title{
-  font-family: "gagalin", Arial, sans-serif;
-    font-size: 40px;
+   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    font-size: rem(40px);
     color: white;
-    padding-top: 15px;
+    padding-top: rem(15px);
     
 }
 
@@ -33,7 +33,7 @@
   align-items: center;
 transform: rotate(180deg);
 height: 100vh;
-max-width: 9%;
+width: rem(60px);
 align-items: center;
 
 }
@@ -45,14 +45,14 @@ align-items: center;
 
 .kitchen__info{
   background: rgba(47, 50, 52, 0.5);
-  
-  width: 0;
+  overflow: hidden;
+ width: 0;
 }
 
 .kitchen__text{
   font-family: 'Ubuntu';	
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: white;
   min-width: 40%;
   padding: 14% 4%;
@@ -68,6 +68,11 @@ align-items: center;
 
 .kitchen__item--active{
   .kitchen__info{
-    width: 40%;
+    max-width: rem(540px);
+    width: 100%;
+  }
+
+  .kitchen__title{
+    color: #f9b43b;
   }
 }
