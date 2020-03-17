@@ -9,6 +9,11 @@
   display: flex;
   align-items: center;
   flex: .8;
+
+  @include tablets{
+    flex-direction: column;
+    
+  }
 }
 
 .hero__desc{
@@ -20,6 +25,11 @@
 .hero__text{
   width: 50%;
   padding-top: rem(120px);
+
+  @include tablets{
+    padding-top: 0em;
+    text-align: center;
+  }
 }
 
 .hero__container{

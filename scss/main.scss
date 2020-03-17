@@ -1,4 +1,5 @@
 @import '../scss/settings/vars.scss';
+@import './misk/media.scss';
 @import '../scss/settings/fonts.scss';
 @import '../scss/settings/base.scss';
 @import '../scss/settings/normalize.scss';
@@ -17,20 +18,21 @@
 
 
 //blocks
-@import '../scss/blocks/section.scss';
-@import '../scss/blocks/hero.scss';
-@import '../scss/blocks/header.scss';
-@import '../scss/blocks/menu.scss';
-@import '../scss/blocks/btn.scss';
-@import '../scss/blocks/scroll-down.scss';
-@import '../scss/blocks/features.scss';
-@import '../scss/blocks/feature.scss';
-@import '../scss/blocks/reviews.scss';
-@import '../scss/blocks/review.scss';
-@import '../scss/blocks/team.scss';
-@import '../scss/blocks/members.scss';
-@import '../scss/blocks/kitchen.scss';
-@import '../scss/blocks/map.scss';
-@import '../scss/blocks/footer.scss';
-@import '../scss/blocks/order.scss';
-@import '../misk/media.scss';
+@import './blocks/section.scss';
+@import './blocks/hero.scss';
+@import './blocks/header.scss';
+@import './blocks/menu.scss';
+@import './blocks/btn.scss';
+@import './blocks/scroll-down.scss';
+@import './blocks/features.scss';
+@import './blocks/feature.scss';
+@import './blocks/reviews.scss';
+@import './blocks/review.scss';
+@import './blocks/team.scss';
+@import './blocks/members.scss';
+@import './blocks/kitchen.scss';
+@import './blocks/map.scss';
+@import './blocks/footer.scss';
+@import './blocks/order.scss';
+@import './blocks/pagination.scss';
+@import './blocks/hamburger-menu-link.scss';

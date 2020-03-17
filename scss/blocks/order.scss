@@ -99,6 +99,13 @@ font-size: rem(14px);
   }
 }
 
+.order__input-checkbox{
+  position: absolute;
+  top: 0;
+  left: rem(-9999px);
+}
+
+
 .order__checkbox-style{
   display: flex;
   margin-right: rem(10px);
@@ -108,10 +115,24 @@ font-size: rem(14px);
   background-color: white;
   align-items: center;
   justify-content: center;
-  
+  &::before{
+    content: '';
+    display: flex;
+    background: url(../img/galka.png) center center / cover no-repeat;
+    width: rem(0px);
+    height: rem(0px);
+    align-items: center;
+    justify-content: center;
+  }
     
 }
-
+.order__input-checkbox:checked + .order__checkbox-style{
+transition: .3s;
+&::before{
+  width: rem(8px);
+  height: rem(8px);
+}
+}
 
 .order__buttons{
   display: flex;
@@ -135,5 +156,6 @@ font-size: rem(14px);
 
 .order__textarea{
   overflow: auto;
-  width: 100%;
+  height: rem(140px);
+  resize: none;
 }

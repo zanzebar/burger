@@ -34,7 +34,7 @@ body {
 }
 
 body {
-  font-size: rem(16px);
+  font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-  max-width: rem(940px);
+  max-width: 58.75rem;
   width: 95%;
   margin: 0 auto;
 }
@@ -447,13 +447,13 @@ template {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 40.625rem;
 }
 
 .section__title {
-  font-size: rem(72px);
+  font-size: 4.5rem;
   color: #f9b43b;
-  margin-bottom: rem(50px);
+  margin-bottom: 3.125rem;
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   line-height: 1;
 }
@@ -462,6 +462,11 @@ template {
 }
 .section__title--color--black {
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .section__title {
+    margin-bottom: 0.625rem;
+  }
 }
 
 .hero {
@@ -476,16 +481,27 @@ template {
   align-items: center;
   flex: 0.8;
 }
+@media screen and (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+  }
+}
 
 .hero__desc {
-  font-size: rem(65px);
+  font-size: 4.0625rem;
   font-family: "Lifehack-Medium";
   line-height: 1.1;
 }
 
 .hero__text {
   width: 50%;
-  padding-top: rem(120px);
+  padding-top: 7.5rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__text {
+    padding-top: 0em;
+    text-align: center;
+  }
 }
 
 .hero__container {
@@ -498,7 +514,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: rem(15px);
+  padding-top: 0.9375rem;
 }
 
 .header__btns {
@@ -506,7 +522,13 @@ template {
   align-items: center;
   font-family: "Ubuntu";
   font-weight: 500;
-  font-size: rem(13px);
+  font-size: 0.8125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -521,18 +543,18 @@ template {
 .menu__item:before {
   content: "";
   display: block;
-  width: rem(4px);
-  height: rem(4px);
+  width: 0.25rem;
+  height: 0.25rem;
   border-radius: 50%;
   background: white;
-  margin-left: rem(15px);
+  margin-left: 0.9375rem;
 }
 .menu__item:first-child::before {
   display: none;
 }
 
 .menu__link {
-  margin-left: rem(15px);
+  margin-left: 0.9375rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -543,9 +565,9 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: rem(10px) rem(15px);
-  border-radius: rem(5px);
-  margin-left: rem(15px);
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+  margin-left: 0.9375rem;
 }
 .btn:hover {
   background-color: #c1401e;
@@ -561,11 +583,11 @@ template {
 
 .scroll-down {
   position: absolute;
-  bottom: rem(40px);
+  bottom: 2.5rem;
   left: 50%;
   transform: translatex(-50%);
-  width: rem(40px);
-  height: rem(40px);
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: transparent;
   border: transparent;
   cursor: pointer;
@@ -592,16 +614,16 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: rem(35px);
+  margin-bottom: 2.1875rem;
 }
 
 .feature__title {
-  font-size: rem(24px);
+  font-size: 1.5rem;
   font-family: "Lifehack-Medium";
 }
 
 .feature__text {
-  font-size: rem(14px);
+  font-size: 0.875rem;
   font-family: "Ubuntu";
   font-weight: 500;
 }
@@ -619,7 +641,7 @@ template {
 
 .reviews {
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 40.625rem;
 }
 
 .review {
@@ -653,16 +675,16 @@ template {
 }
 
 .review__username {
-  font-size: rem(14px);
+  font-size: 0.875rem;
   font-family: "Gagalin-Regular";
-  margin-bottom: rem(15px);
+  margin-bottom: 0.9375rem;
 }
 
 .review__content {
-  font-size: rem(14px);
+  font-size: 0.875rem;
   font-family: "Ubuntu";
   font-weight: 300;
-  margin-bottom: rem(15px);
+  margin-bottom: 0.9375rem;
 }
 
 .review__item {
@@ -674,8 +696,8 @@ template {
 }
 
 .review__hover-content {
-  padding: rem(20px);
-  max-width: rem(290px);
+  padding: 1.25rem;
+  max-width: 18.125rem;
 }
 
 .team {
@@ -700,23 +722,23 @@ template {
 
 .team__member {
   font-family: "Gagalin-Regular";
-  font-size: rem(14px);
+  font-size: 0.875rem;
   color: white;
-  margin-bottom: rem(15px);
+  margin-bottom: 0.9375rem;
 }
 .team__member::before {
   content: "";
   display: inline-block;
-  border: rem(7px) solid transparent;
-  border-left-width: rem(5px);
-  border-right-width: rem(5px);
+  border: 0.4375rem solid transparent;
+  border-left-width: 0.3125rem;
+  border-right-width: 0.3125rem;
   border-top-color: #f9b43b;
   border-bottom: none;
-  margin-right: rem(10px);
+  margin-right: 0.625rem;
 }
 
 .team__item {
-  margin-bottom: rem(50px);
+  margin-bottom: 3.125rem;
   display: flex;
   flex-direction: column;
 }
@@ -730,9 +752,9 @@ template {
 .member__picture {
   border-radius: 50%;
   overflow: hidden;
-  width: rem(100px);
-  height: rem(100px);
-  margin-right: rem(20px);
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 1.25rem;
 }
 
 .member__img {
@@ -743,16 +765,16 @@ template {
 .member__position {
   font-family: "Ubuntu";
   font-weight: bold;
-  font-size: rem(14px);
+  font-size: 0.875rem;
   color: white;
 }
 
 .member__text {
   font-family: "Ubuntu";
   font-weight: 300;
-  font-size: rem(14px);
+  font-size: 0.875rem;
   color: white;
-  margin-top: rem(20px);
+  margin-top: 1.25rem;
 }
 
 .member__info {
@@ -765,12 +787,12 @@ template {
 .team__item_active .team__member::before {
   content: "";
   display: inline-block;
-  border: rem(7px) solid transparent;
-  border-left-width: rem(5px);
-  border-right-width: rem(5px);
+  border: 0.4375rem solid transparent;
+  border-left-width: 0.3125rem;
+  border-right-width: 0.3125rem;
   border-bottom-color: #f9b43b;
   border-top: none;
-  margin-right: rem(10px);
+  margin-right: 0.625rem;
 }
 .team__item_active .member__content {
   overflow: visible;
@@ -787,7 +809,7 @@ template {
   display: flex;
   position: absolute;
   top: 0;
-  left: rem(60px);
+  left: 3.75rem;
 }
 
 .section__title--white {
@@ -797,9 +819,9 @@ template {
 
 .kitchen__title {
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
-  font-size: rem(40px);
+  font-size: 2.5rem;
   color: white;
-  padding-top: rem(15px);
+  padding-top: 0.9375rem;
 }
 
 .kitchen__link {
@@ -808,7 +830,7 @@ template {
   align-items: center;
   transform: rotate(180deg);
   height: 100vh;
-  width: rem(60px);
+  width: 3.75rem;
   align-items: center;
 }
 
@@ -817,7 +839,7 @@ template {
 }
 
 .kitchen__info {
-  background: rgba(47, 50, 52, 0.5);
+  background: rgba(47, 50, 52, 0.7);
   overflow: hidden;
   width: 0;
 }
@@ -825,7 +847,7 @@ template {
 .kitchen__text {
   font-family: "Ubuntu";
   font-weight: 300;
-  font-size: rem(14px);
+  font-size: 0.875rem;
   color: white;
   min-width: 40%;
   padding: 14% 4%;
@@ -836,10 +858,11 @@ template {
   position: absolute;
   top: 0;
   right: 0;
+  height: 100%;
 }
 
 .kitchen__item--active .kitchen__info {
-  max-width: rem(540px);
+  max-width: 33.75rem;
   width: 100%;
 }
 .kitchen__item--active .kitchen__title {
@@ -863,7 +886,7 @@ template {
   bottom: 0;
   left: 0;
   align-items: center;
-  height: rem(60px);
+  height: 3.75rem;
 }
 
 .footer__left {
@@ -890,7 +913,7 @@ template {
 }
 
 .socials__item {
-  margin-right: rem(25px);
+  margin-right: 1.5625rem;
 }
 .socials__item:last-child {
   margin-right: 0;
@@ -907,15 +930,15 @@ template {
 }
 .tell::before {
   content: "";
-  width: rem(15px);
-  height: rem(15px);
+  width: 0.9375rem;
+  height: 0.9375rem;
   background: url(../../img/icons/phone.svg) center center/cover no-repeat;
-  margin-right: rem(10px);
+  margin-right: 0.625rem;
 }
 
 .socilas__svg {
-  width: rem(20px);
-  height: rem(20px);
+  width: 1.25rem;
+  height: 1.25rem;
   fill: gray;
 }
 .socilas__svg:hover {
@@ -961,8 +984,8 @@ template {
   position: relative;
   align-items: center;
   flex-shrink: 0;
-  margin-right: rem(20px);
-  margin-bottom: rem(15px);
+  margin-right: 1.25rem;
+  margin-bottom: 0.9375rem;
 }
 .order__radio .order__title {
   margin-bottom: 0;
@@ -972,7 +995,7 @@ template {
   margin-bottom: 0.5rem;
   color: white;
   font-family: "Ubuntu";
-  font-size: rem(14px);
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
@@ -988,23 +1011,23 @@ template {
   border-color: #f9b43b;
 }
 .order__input-radio:checked + .order__input-style::before {
-  height: rem(8px);
-  width: rem(8px);
+  height: 0.5rem;
+  width: 0.5rem;
 }
 
 .order__input-radio {
   position: absolute;
   top: 0;
-  left: rem(-9999px);
+  left: -624.9375rem;
 }
 
 .order__input-style {
   display: flex;
-  margin-right: rem(10px);
-  width: rem(16px);
-  height: rem(16px);
+  margin-right: 0.625rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  border: rem(1px) solid gray;
+  border: 0.0625rem solid gray;
   justify-content: center;
   align-items: center;
 }
@@ -1017,15 +1040,38 @@ template {
   background-color: #f9b43b;
 }
 
+.order__input-checkbox {
+  position: absolute;
+  top: 0;
+  left: -624.9375rem;
+}
+
 .order__checkbox-style {
   display: flex;
-  margin-right: rem(10px);
-  width: rem(16px);
-  height: rem(16px);
-  border: rem(1px) solid gray;
+  margin-right: 0.625rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.0625rem solid gray;
   background-color: white;
   align-items: center;
   justify-content: center;
+}
+.order__checkbox-style::before {
+  content: "";
+  display: flex;
+  background: url(../img/galka.png) center center/cover no-repeat;
+  width: 0rem;
+  height: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.order__input-checkbox:checked + .order__checkbox-style {
+  transition: 0.3s;
+}
+.order__input-checkbox:checked + .order__checkbox-style::before {
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 .order__buttons {
@@ -1046,7 +1092,85 @@ template {
 
 .order__textarea {
   overflow: auto;
-  width: 100%;
+  height: 8.75rem;
+  resize: none;
+}
+
+.pagination {
+  position: fixed;
+  top: 30%;
+  right: 3.125rem;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .pagination {
+    display: none;
+  }
+}
+.pagination__item {
+  margin-bottom: 0.9375rem;
+  position: relative;
+}
+.pagination__item:last-child {
+  margin-bottom: 0;
+}
+.pagination__item-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+}
+.pagination__link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.pagination__link:hover {
+  background: #ccc;
+}
+
+.hamburger-menu-link {
+  vertical-align: middle;
+  position: relative;
+  height: 1.375rem;
+  align-items: center;
+  margin-left: 1.875rem;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-menu-link {
+    display: inline-flex;
+  }
+}
+
+.hamburger-menu-link__bars, .hamburger-menu-link__bars:before, .hamburger-menu-link__bars:after {
+  background: #fff;
+  width: 1.5rem;
+  height: 0.3125rem;
+  border-radius: 0.1875rem;
+}
+.hamburger-menu-link__bars:before, .hamburger-menu-link__bars:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.hamburger-menu-link__bars:before {
+  top: 0;
+}
+.hamburger-menu-link__bars:after {
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

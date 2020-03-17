@@ -19,4 +19,8 @@
   &--color--black{
     color: black;
   }
+
+  @include tablets{
+    margin-bottom: rem(10px);
+  }
 }

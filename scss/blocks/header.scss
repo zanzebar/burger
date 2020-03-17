@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding-top: rem(15px);
+
+ 
 }
 
 
@@ -12,4 +14,10 @@
   font-family: 'Ubuntu';
   font-weight: 500;
   font-size: rem(13px);
+}
+
+.header__menu{
+  @include tablets{
+    display: none;
+  }
 }

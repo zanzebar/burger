@@ -18,7 +18,7 @@
       <header class="header">
         <img  class="logo" src="./img/logo.png" alt="">
         <div class="header__btns">
-          <nav class="menu">
+          <nav class="header__menu">
             <ul class="menu__list">
               <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
               <li class="menu__item"> <a href="#" class="menu__link">Бургеры</a> </li>
@@ -29,7 +29,8 @@
               <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
             </ul>
           </nav>
-          <a href="#" class="btn">Заказать</a>
+          <div class="header__links"><a class="order-link btn" href="" data-scroll-to="6">Заказать</a><a class="hamburger-menu-link" href="">
+            <div class="hamburger-menu-link__bars"></div></a></div>
         </div>
       </header>
       <div class="hero__content">
@@ -43,10 +44,11 @@
         </div>
         <button type="button" class="scroll-down">
           <div class="button__img">
-            <img src="./img/arrow-scroll.png" alt="" class="button__img-elem">
+            <img src="./img/icons/arrow-scroll.svg" alt="" class="button__img-elem">
           </div>
         </button>
       </div>
+    
   </section>
   
   <section class="section features">
@@ -382,7 +384,7 @@
         </div>
         <div class="order__col order__col--right">
           <div class="order__row">
-            <label class="order__label">
+            <label class="order__block">
                <div class="order__title">Комментарий</div>
                <textarea name="" class="order__input order__textarea"></textarea>
             </label class="order__label">
@@ -401,7 +403,7 @@
            </div>
            <div class="order__row">
               <label class="order__radio">
-                 <input type="checkbox" class="order__input-radio" name="checkbox">
+                 <input type="checkbox" class="order__input-checkbox" name="checkbox">
                  <span class="order__checkbox-style"></span>
                  <div class="order__title">Не перезванивать</div>
               </label>
@@ -476,6 +478,38 @@
    
   </footer>
 
+
+  <div class="pagination">
+    <ul class="pagination__list">
+       <li class="pagination__item pagination__item-active">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+       <li class="pagination__item">
+          <a href="#" class="pagination__link"></a>
+       </li>
+    </ul>
+ </div>
 </div>
 
   </div>

@@ -44,7 +44,7 @@ align-items: center;
 }
 
 .kitchen__info{
-  background: rgba(47, 50, 52, 0.5);
+  background: rgba(47, 50, 52, 0.7);
   overflow: hidden;
  width: 0;
 }
@@ -64,6 +64,7 @@ align-items: center;
   position: absolute;
   top: 0;
   right: 0;
+  height: 100%;
 }
 
 .kitchen__item--active{

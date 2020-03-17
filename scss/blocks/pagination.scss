@@ -1,0 +1,48 @@
+.pagination {
+  position: fixed;
+  top: 30%;
+  right: rem(50px);
+  z-index: 100;
+  transform: translateY(-50%);
+
+  @include tablets {
+     display: none;
+  }
+
+  &__item {
+     margin-bottom: rem(15px);
+     position: relative;
+     
+        &:last-child {
+           margin-bottom: 0;
+        }
+     
+        &-active::before {
+           content: '';
+           display: block;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           width: rem(16px);
+           height: rem(16px);
+           border: rem(1px) solid #fff;
+           border-radius: 50%;
+        }
+     }
+
+  &__link {
+    display: block;
+    align-items: center;
+    justify-content: center;
+     background: white;
+     width: rem(9px);
+     height: rem(9px);
+     border: rem(1px) solid rgba(black, .5);
+     border-radius: 50%;
+
+     &:hover {
+        background: #ccc;
+     }
+  }
+}
