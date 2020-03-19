@@ -72,11 +72,17 @@ font-size: rem(14px);
 }
 
 .order__input{
+  box-sizing: border-box;
   width: 100%;
   padding: .8rem 2rem;
   border: none;
   border-radius: .4rem;
-  
+  outline: transparent;
+  border: rem(1px)solid transparent;
+  &:focus{
+    border: rem(1px)solid orange;
+    
+  }
 }
 
 

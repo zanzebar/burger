@@ -1145,10 +1145,16 @@ template {
 }
 
 .order__input {
+  box-sizing: border-box;
   width: 100%;
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 0.4rem;
+  outline: transparent;
+  border: 0.0625rem solid transparent;
+}
+.order__input:focus {
+  border: 0.0625rem solid orange;
 }
 
 .order__input-radio:checked + .order__input-style {
