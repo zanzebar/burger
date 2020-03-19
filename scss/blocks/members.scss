@@ -26,6 +26,12 @@
   display: inline-flex;
   height: 0;
   overflow: hidden;
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .member__picture{
@@ -34,6 +40,11 @@
   width: rem(100px);
   height: rem(100px);
   margin-right: rem(20px);
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: rem(10px);
+  }
 }
 .member__img{
   object-fit: cover;

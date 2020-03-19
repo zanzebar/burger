@@ -5,9 +5,22 @@
 
 .features__list{
   display: flex;
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .features__item{
-  justify-content: space-between;
-  width: calc(100% / 3 - 26px);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - rem(26px));
+@include phones{
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(20px);
+  
+
+}
 }

@@ -20,6 +20,14 @@
   font-size: rem(65px);
   font-family: 'Lifehack-Medium';
   line-height: 1.1;
+
+  @include tablets{
+    margin-bottom: 0;
+  }
+
+  @include phones{
+    font-size: rem(54px);
+  }
 }
 
 .hero__text{
@@ -29,6 +37,7 @@
   @include tablets{
     padding-top: 0em;
     text-align: center;
+    width: 100%;
   }
 }
 

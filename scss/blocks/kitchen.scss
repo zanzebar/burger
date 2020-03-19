@@ -69,8 +69,12 @@ align-items: center;
 
 .kitchen__item--active{
   .kitchen__info{
-    max-width: rem(540px);
+    max-width: rem(400px);
     width: 100%;
+
+    @include tablets{
+      max-width: rem(300px);
+    }
   }
 
   .kitchen__title{

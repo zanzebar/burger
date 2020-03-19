@@ -1,5 +1,8 @@
 .feature{
   text-align: center;
+  @include phones{
+    text-align: left;
+  }
 }
 
 .feature__img{
@@ -7,6 +10,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: rem(35px);
+  @include phones{
+    margin-bottom: 0;
+    width: 100%;
+  }
 }
 
 .feature__title{
@@ -17,5 +24,17 @@
 .feature__text {
   font-size: rem(14px);
   font-family: 'Ubuntu';
-	font-weight: 500;
+  font-weight: 500;
+  @include phones{
+    text-align: left;
+    
+  }
+}
+
+
+.feature__content{
+  @include phones{
+    margin-left: rem(20px);
+    width: 100%;
+  }
 }

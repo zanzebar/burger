@@ -35,6 +35,9 @@
   font-size: rem(14px);
   font-family: 'Gagalin-Regular';
   margin-bottom: rem(15px);
+  @include phones{
+    font-size: rem(24px);
+  }
 }
 
 .review__content{
@@ -42,6 +45,9 @@
   font-family: 'Ubuntu';
   font-weight: 300;
   margin-bottom: rem(15px);
+  @include phones{
+    display: none;
+  }
 }
 
 .review__item{
@@ -56,5 +62,8 @@
 .review__hover-content{
   padding: rem(20px);
   max-width: rem(290px);
+  @include tablets{
+    text-align: center;
+  }
 }
 

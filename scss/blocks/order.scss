@@ -6,22 +6,35 @@
   display: flex;
   flex: 1;
   justify-content: space-between;
+
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
 .order__col{
   width: calc(50% - 10px);
+  @include phones{
+    width: 100%;
+  }
 }
 
 .order__col--right{
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
+  @include tablets{
+    margin-left: 0;
+  }
   
 }
 .order__row{
   margin-bottom: 1.5rem;
   display: flex;
+
+ 
 }
 
 .order__block{
@@ -30,6 +43,10 @@
   &:last-child{
     margin-right: 0;
   }
+@include tablets{
+  margin-right: 1rem;
+}
+  
 }
 
 

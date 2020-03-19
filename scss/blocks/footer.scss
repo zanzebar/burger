@@ -1,7 +1,10 @@
 
 .footer__container{
   display: flex;
-  
+  @include phones{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
@@ -13,8 +16,13 @@
   bottom: 0;
   left: 0;
   align-items: center;
-  height: rem(60px);
+  height:rem(60px);
+@include phones{
+  height: 3%;
 }
+  
+}
+
 
 
 .footer__left{
@@ -28,6 +36,9 @@
   width: 50%;
   align-items: center;
   justify-content: flex-end;
+  @include phones{
+    justify-content: center;
+  }
 }
 
 
@@ -35,6 +46,11 @@
   display: flex;
   flex-direction: column;
   color: white;
+  @include phones{
+    text-align: center;
+    align-items: center;
+    margin-bottom: rem(10px);
+  }
 }
 
 .socials__list{
@@ -64,6 +80,7 @@
     background: url(../../img/icons/phone.svg) center center / cover no-repeat;
     margin-right: rem(10px);
   }
+
 }
 
 .socilas__svg{
