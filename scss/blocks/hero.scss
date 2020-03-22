@@ -16,6 +16,15 @@
   }
 }
 
+
+.hero__image{
+  @include tablets{
+    margin-bottom: rem(50px);
+  }
+  @include phones{
+    margin-bottom: rem(50px);
+  }
+}
 .hero__desc{
   font-size: rem(65px);
   font-family: 'Lifehack-Medium';

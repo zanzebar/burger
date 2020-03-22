@@ -11,6 +11,7 @@
   font-size: rem(72px);
   color: #f9b43b;
   margin-bottom: rem(50px);
+  margin-top: 0;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   line-height: 1;
   &--centered{
@@ -20,9 +21,7 @@
     color: black;
   }
 
-  @include tablets{
-    margin-bottom: rem(20px);
-  }
+  
 
   @include phones{
     font-size: rem(63px);

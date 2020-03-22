@@ -4,6 +4,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+  font-family: 'Ubuntu';
+	
+	font-weight: 500;
+  font-size: rem(14px);
   padding: rem(10px) rem(15px);
   border-radius: rem(5px);
   margin-left: rem(15px);
@@ -18,6 +22,16 @@
   margin-left: 0;
   &:hover{
     background-color: #1f2122;
+  }
+  @include phones{
+    display: none;
+  }
+}
+
+.btn__hover--phones{
+  display: none;
+  @include phones{
+    display: inline-flex;
   }
 }
 

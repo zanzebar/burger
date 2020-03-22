@@ -16,9 +16,11 @@
   bottom: 0;
   left: 0;
   align-items: center;
-  height:rem(60px);
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
 @include phones{
-  height: 3%;
+  padding: rem(20px)  rem(20px);
+  
 }
   
 }
@@ -29,6 +31,10 @@
   display: flex;
   align-items: center;
   width: 50%;
+  @include phones{
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .footer__right{
@@ -38,6 +44,7 @@
   justify-content: flex-end;
   @include phones{
     justify-content: center;
+    width: 100%;
   }
 }
 
@@ -77,7 +84,7 @@
     content: "";
     width: rem(15px);
     height: rem(15px);
-    background: url(../../img/icons/phone.svg) center center / cover no-repeat;
+    background: url(../img/icons/phone.svg) center center / cover no-repeat;
     margin-right: rem(10px);
   }
 

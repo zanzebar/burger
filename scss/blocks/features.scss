@@ -3,6 +3,14 @@
 }
 
 
+.section__title{
+  @include phones{
+    .section__title--phones{
+      font-size: rem(50px);
+    }
+  }
+}
+
 .features__list{
   display: flex;
   @include phones{
@@ -13,7 +21,7 @@
 .features__item{
   display: flex;
   flex-direction: column;
-  width: calc(100% / 3 - rem(26px));
+  flex: 1;
 @include phones{
   flex-direction: row;
   width: 100%;
