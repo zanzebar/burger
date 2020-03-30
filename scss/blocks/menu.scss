@@ -25,11 +25,15 @@ $itemsMargin:rem(15px);
     display: none;
   }
 }
+
 }
 
 .menu__link{
   margin-left: $itemsMargin;
   text-decoration: none;
   text-transform: uppercase;
-  
+  color: white;
+  &:hover{
+    color: #e45028;
+  }
 }

@@ -9,3 +9,22 @@
   border: transparent;
   cursor: pointer;
 }
+
+
+.scroll-left{
+  transform: rotate(90deg);
+  width: rem(40px);
+  height: rem(40px);
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.scroll-right{
+  transform: rotate(270deg);
+  width: rem(40px);
+  height: rem(40px);
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,184 @@
+.price{
+  background-color: #f3a33a;
+ justify-content: center;
+  
+}
+
+
+.price__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.composition{
+  display: flex;
+  flex-direction: column;
+  padding: rem(15px) rem(20px);
+  border: 1px solid transparent;
+  background-color: #f08c33;
+  border-radius: rem(5px);
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  &:hover{
+    background-color: orangered;
+    .ingredient{
+      display: flex;
+    }
+  }
+}
+
+
+.composition__content{
+  display: flex;
+}
+.composition__text{
+  display: flex;
+  color: white;
+  font-size: rem(14px);
+  font-family: 'Gagalin-Regular';
+}
+
+
+
+
+
+.price__item{
+  position: relative;
+}
+
+.price__content{
+  display: flex;
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include phones{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+.price__text{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  
+@include tablets{
+  text-align: center;
+  justify-content: center;
+    align-items: center;
+}
+
+  @include phones{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.price__desc{
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: rem(14px);
+  color: white;
+}
+
+.price__cost{
+  font-family: 'Gagalin-Regular';
+  font-size: rem(72px);
+  color: orangered;
+}
+
+.price__num{
+  color: orangered;
+  font-family: 'Gagalin-Regular';
+  font-size: rem(30px);
+}
+
+.kkal{
+display: flex;
+flex-direction: column;
+position: absolute;
+
+top: rem(440px);
+left: auto;
+opacity: .7;
+align-items: center;
+color: white;
+
+  @include tablets{
+    position: absolute;
+    top: 0;
+    left: rem(508px);
+    }
+
+    @include phones{
+      position: absolute;
+    top: 0;
+    left: rem(355px);
+    }
+}
+
+.kkal__num{
+  position: absolute;
+  top: rem(21px);
+    left: (13px);
+  font-family: 'Gagalin-Regular';
+  font-size: rem(20px);
+}
+
+.kkal__text{
+  font-family: 'Gagalin-Regular';
+  font-size: rem(14px);
+}
+
+
+.ingredient{
+  position: absolute;
+    top: 0;
+    left: 90px;
+    display: none;
+}
+
+
+.ingredient__list{
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid grey;
+ border-radius: rem(5px);
+ width: fit-content;
+ min-width: 16.875rem;
+ padding: rem(14px);
+}
+
+.ingredient__item{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(15px);
+    &:last-child{
+      margin-bottom: 0;
+    }
+}
+
+.ingredient__svg{
+  width: rem(45px);
+  height: rem(45px);
+}
+
+.scroll{
+  display: flex;
+  width: rem(100px);
+}
+
+
+.slider{
+  display: flex;
+  align-items: center;
+}
