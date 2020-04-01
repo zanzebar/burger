@@ -5,6 +5,7 @@
 	align-items: center;
 	margin-left: rem(30px);
 	display: none;
+width: rem(25px);
 
 	@include tablets {
 		display: inline-flex;
@@ -47,4 +48,12 @@
 
 .ham--inactive{
 	display: block;
+}
+
+.hamburder-menu-link__close{
+	position: absolute;
+	top: 35px;
+	right: 13px;
+	cursor: pointer;
+	z-index: 2;
 }

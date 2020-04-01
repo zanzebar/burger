@@ -8,10 +8,21 @@ const openbtn = document.querySelector ('#openbtn');
 hammenu.addEventListener('click', function(e){
   e.preventDefault();
   hm.classList.add('header__menu--active');
+
+  openbtn.classList.add('ham--active');
+  openbtn.classList.remove('ham--inactive');
+  closebtn.classList.add('ham--inactive');
+  closebtn.classList.remove('ham--active');
 }) 
 
-hammenu.addEventListener('click', function(e){
+
+
+closebtn.addEventListener('click', function(e){
   e.preventDefault();
-  openbtn.classList.remove('ham--active');
+  closebtn.classList.add('ham--active');
   closebtn.classList.remove('ham--inactive');
+  
+  openbtn.classList.add('ham--inactive');
+  openbtn.classList.remove('ham--active');
+  hm.classList.remove('header__menu--active');
 })
