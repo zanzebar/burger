@@ -12,6 +12,9 @@
 }
 
 .composition{
+  position: absolute;
+    top: 0;
+    left: 0;
   display: flex;
   flex-direction: column;
   padding: rem(15px) rem(20px);
@@ -25,6 +28,7 @@
     background-color: orangered;
     .ingredient{
       display: flex;
+      transition: .8s;
     }
   }
 }
@@ -102,12 +106,17 @@
   font-size: rem(30px);
 }
 
+.price__img-elem{
+  padding-top: 95px;
+    padding-bottom: 52px;
+}
+
 .kkal{
 display: flex;
 flex-direction: column;
 position: absolute;
 
-top: rem(440px);
+top: rem(400px);
 left: auto;
 opacity: .7;
 align-items: center;
@@ -116,13 +125,13 @@ color: white;
   @include tablets{
     position: absolute;
     top: 0;
-    left: rem(508px);
+    left: 82%;
     }
 
     @include phones{
-      position: absolute;
+    position: absolute;
     top: 0;
-    left: rem(355px);
+    left: 82%;
     }
 }
 
@@ -143,14 +152,14 @@ color: white;
 .ingredient{
   position: absolute;
     top: 0;
-    left: 90px;
+    left: 88px;
     display: none;
 }
 
 
 .ingredient__list{
   background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid grey;
+  border: 1px solid transparent;
  border-radius: rem(5px);
  width: fit-content;
  min-width: 16.875rem;
@@ -175,10 +184,19 @@ color: white;
 .scroll{
   display: flex;
   width: rem(100px);
+  
 }
 
 
 .slider{
   display: flex;
   align-items: center;
+}
+
+.button__img{
+  position: absolute;
+  top: rem(29px);
+  @include phones{
+    top: 0;
+  }
 }

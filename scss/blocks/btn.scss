@@ -10,12 +10,15 @@
   font-size: rem(14px);
   padding: rem(10px) rem(15px);
   border-radius: rem(5px);
-  margin-left: rem(15px);
+  
   &:hover{
     background-color: #c1401e;
   }
 }
 
+.btn__ml{
+  margin-left: rem(15px);
+}
 
 .btn__hover{
   background-color: #2f3234;

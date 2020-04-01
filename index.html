@@ -18,7 +18,7 @@
       <header class="header">
         <img  class="logo" src="./img/logo.png" alt="">
         <div class="header__btns">
-          <nav class="header__menu">
+          <nav class="header__menu" id="hm">
             <ul class="menu__list">
               <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
               <li class="menu__item"> <a href="#" class="menu__link">Бургеры</a> </li>
@@ -29,8 +29,11 @@
               <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
             </ul>
           </nav>
-          <div class="header__links"><a class="order-link btn" href="" data-scroll-to="6">Заказать</a><a class="hamburger-menu-link" href="">
-            <div class="hamburger-menu-link__bars"></div></a></div>
+          <div class="header__links">
+            <a class="btn btn__ml" href="" data-scroll-to="6">Заказать</a>
+            <a class="hamburger-menu-link" id="hammenu" href="">
+            <div class="hamburger-menu-link__bars"></div></a>
+          </div>
         </div>
       </header>
       <div class="hero__content">
@@ -184,7 +187,7 @@
                  <div class="price__money">
                    <span class="price__cost">500</span>
                    <span class="price__num">рублей</span>
-                   <a href="#" class="btn btn__price">Заказать</a>
+                   <a href="#" class="btn btn__ml">Заказать</a>
                  </div>
                </div>
                
@@ -632,5 +635,6 @@
 </div>
 
   </div>
+  <script src="./js/hamburger.js"></script>
 </body>
 </html>
