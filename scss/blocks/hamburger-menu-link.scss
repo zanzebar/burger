@@ -33,3 +33,18 @@
 		bottom: 0;
 	}
 }
+
+
+.hamburger__svg{
+	
+	width: rem(25px);
+	height: rem(25px);
+}
+
+.ham--active{
+	display: none;
+}
+
+.ham--inactive{
+	display: block;
+}

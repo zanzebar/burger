@@ -1443,6 +1443,19 @@ template {
   bottom: 0;
 }
 
+.hamburger__svg {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.ham--active {
+  display: none;
+}
+
+.ham--inactive {
+  display: block;
+}
+
 .price {
   background-color: #f3a33a;
   justify-content: center;
