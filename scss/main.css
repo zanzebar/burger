@@ -1645,6 +1645,18 @@ template {
   height: 2.8125rem;
 }
 
+.ingredient__name {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+}
+
+.ingredient__weight {
+  font-family: "Ubuntu";
+  font-size: 14px;
+}
+
 .scroll {
   display: flex;
   width: 6.25rem;
